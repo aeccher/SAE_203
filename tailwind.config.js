@@ -7,6 +7,7 @@ module.exports = {
     screens: {
       'mobile': '375px',
       'ipad_mini': '744px',
+      'ipad_pro': '1024px',
       'bureau': '1440px',
     },
 
