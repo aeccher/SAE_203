@@ -52,8 +52,8 @@
     <icon-facebook />
     <icon-instagram />
     <icon-youtube />
-    <p><Router-link to="/contact" class="font-roboto text-sm italic text-Jaune">Nous contacter</Router-link></p>
-    <p><Router-link to="/mentionslegales" class="font-roboto text-sm italic text-Jaune">Mentions légales</Router-link></p>
+    <p><Router-link to="/contact" class="font-roboto text-sm italic text-Jaune ipad_pro:text-lg">Nous contacter</Router-link></p>
+    <p><Router-link to="/mentionslegales" class="font-roboto text-sm italic text-Jaune ipad_pro:text-lg">Mentions légales</Router-link></p>
   </footer>
 </template>
 
