@@ -1,6 +1,6 @@
 <template >
-  <div class="w-72 rounded-lg bg-Noir bureau:w-auto">
-    <img :src="img_card" />
+  <div class="w-72 rounded-lg bg-Noir bureau:w-full bureau:object-cover">
+    <img class="bureau:h-52 bureau:w-full" :src="img_card" />
 
     <p class="pl-6 font-mate text-xl text-Vert">
       {{ date }}
