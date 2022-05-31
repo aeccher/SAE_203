@@ -52,7 +52,7 @@
                   ></textarea>
                 </div>
 
-                <div>
+                <div class="flex justify-end">
                   <button type="submit" class="mb-9 rounded-lg bg-Noir px-10 py-4 text-center font-roboto text-base text-Jaune">
                     Envoyer
                   </button>
