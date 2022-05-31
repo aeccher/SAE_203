@@ -20,7 +20,7 @@
 
       <div
         id="menu"
-        class="fixed inset-0 translate-x-full bg-Noir motion-safe:transition-transform motion-safe:duration-1000"
+        class="fixed inset-0 z-40 translate-x-full bg-Noir motion-safe:transition-transform motion-safe:duration-1000"
         :class="{ 'translate-x-0': menuOuvert }"
       >
         <ul class="pt-10 text-center font-roboto text-8xl">
