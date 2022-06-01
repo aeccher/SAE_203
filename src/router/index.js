@@ -23,11 +23,8 @@ const router = createRouter({
     { path: '/artiste', name: 'Artiste', component: ArtisteView },
     { path: '/style-guide', name: 'StyleGuide', component: StyleGuideView },
     {
-      path: '/404', name: 'NotFound', component: NotFound
+      path: '/404', alias: '/:catchAll(.*)', name: 'NotFound', component: NotFound
     },
-    {
-      path: '/:catchAll(.*)', redirect: '404'
-    }
   ]
 })
 
