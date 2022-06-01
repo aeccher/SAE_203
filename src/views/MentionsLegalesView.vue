@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <div class="m-9 flex flex-col space-y-10">
+  <main class="dark:bg-Noir">
+    <div class="m-9 flex flex-col space-y-10 dark:text-white">
       <p class="font-roboto text-xs italic ipad_mini:text-2xl ipad_mini:font-bold ipad_mini:not-italic">DIRECTION DE LA PUBLICATION</p>
       <p class="font-mate text-xs ipad_mini:text-lg">Ziclon festival</p>
       <p class="font-mate text-xs ipad_mini:text-lg">ziclon@festival.com</p>
