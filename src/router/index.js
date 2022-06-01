@@ -8,6 +8,7 @@ import MentionsLegalesView from '../views/MentionsLegalesView.vue'
 import ConcertView from '../views/ConcertView.vue'
 import ArtisteView from '../views/ArtisteView.vue'
 import StyleGuideView from '../views/StyleGuideView.vue'
+import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,12 @@ const router = createRouter({
     { path: '/concert', name: 'Concert', component: ConcertView },
     { path: '/artiste', name: 'Artiste', component: ArtisteView },
     { path: '/style-guide', name: 'StyleGuide', component: StyleGuideView },
+    {
+      path: '/404', name: 'NotFound', component: NotFound
+    },
+    {
+      path: '/:catchAll(.*)', redirect: '404'
+    }
   ]
 })
 
