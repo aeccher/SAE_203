@@ -20,7 +20,7 @@ const router = createRouter({
     { path: '/contact', name: 'Contact', component: ContactView },
     { path: '/mentionslegales', name: 'MentionsLegales', component: MentionsLegalesView },
     { path: '/concert', name: 'Concert', component: ConcertView },
-    { path: '/artiste', name: 'Artiste', component: ArtisteView },
+    { path: '/artiste/:id', name: 'Artiste', component: ArtisteView },
     { path: '/style-guide', name: 'StyleGuide', component: StyleGuideView },
     {
       path: '/404', alias: '/:catchAll(.*)', name: 'NotFound', component: NotFound

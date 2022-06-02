@@ -1,6 +1,6 @@
 <template >
   <div class="w-72 rounded-lg bg-Noir">
-    <img :src="img_card" />
+    <img class="rounded-t-lg" :src="img_card" :alt="`Photo du groupe ${title}`" />
 
     <p class="pl-6 font-mate text-xl text-Vert">
       {{ title }}
