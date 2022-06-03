@@ -1,5 +1,10 @@
 <template>
   <main class="bg-Bleu pl-36 pt-14 pb-16">
+    <div class="flex justify-end pr-4">
+      <Router-link to="/createArtistes">
+        <icon-plus />
+      </Router-link>
+    </div>
     <div class="grid gap-12 gap-x-4 ipad_mini:grid-cols-2 bureau:grid-cols-3">
       <RouterLink v-for="artiste in listeArtiste" :to="{ name: 'Artiste', params: { id: artiste.id } }" :key="artiste.id" class="block">
         <card-artistes :title="artiste.title" :lieu="artiste.lieu" :img_card="artiste.photo" :id="artiste.id" />
@@ -10,6 +15,7 @@
 
 <script>
 import CardArtistes from "../components/CardArtistes.vue";
+import IconPlus from "../components/icons/IconPlus.vue";
 
 // Bibliothèque Firestore : import des fonctions
 import {
@@ -35,7 +41,7 @@ import {
 
 export default {
   name: "ArtistesView",
-  components: { CardArtistes },
+  components: { CardArtistes, IconPlus },
   data() {
     return {
       listeArtiste: [], // Liste des artistes - collection artiste Firebase

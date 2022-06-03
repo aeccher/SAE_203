@@ -12,6 +12,7 @@ import NotFound from '../views/NotFound.vue'
 import CreateProgrammation from '../views/CreateProgrammationView.vue'
 import UpdateProgrammation from '../views/UpdateProgrammationView.vue'
 import DeleteProgrammation from '../views/DeleteProgrammationView.vue'
+import CreateArtistes from '../views/CreateArtistesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,8 @@ const router = createRouter({
     { path: '/createProgrammation', name: 'CreateProgrammation', component: CreateProgrammation },
     { path: '/updateProgrammation/:id', name: 'UpdateProgrammation', component: UpdateProgrammation },
     { path: '/deleteProgrammation/:id', name: 'DeleteProgrammation', component: DeleteProgrammation },
+
+    { path: '/createArtistes', name: 'CreateArtistes', component: CreateArtistes },
   ]
 })
 
