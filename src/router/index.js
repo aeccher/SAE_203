@@ -9,6 +9,7 @@ import ConcertView from '../views/ConcertView.vue'
 import ArtisteView from '../views/ArtisteView.vue'
 import StyleGuideView from '../views/StyleGuideView.vue'
 import NotFound from '../views/NotFound.vue'
+import CreateProgrammation from '../views/CreateProgrammationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +26,7 @@ const router = createRouter({
     {
       path: '/404', alias: '/:catchAll(.*)', name: 'NotFound', component: NotFound
     },
+    { path: '/createProgrammation', name: 'CreateProgrammation', component: CreateProgrammation },
   ]
 })
 

@@ -1,5 +1,11 @@
 <template>
   <main class="bg-Vert pl-36 pt-14 pb-16">
+    <div class="flex justify-end pr-4">
+      <Router-link to="/createProgrammation">
+        <icon-plus />
+      </Router-link>
+    </div>
+
     <Router-link to="/concert">
       <div class="grid gap-12 gap-x-4 ipad_mini:grid-cols-2 bureau:grid-cols-3">
         <card-programmation
@@ -16,6 +22,7 @@
 
 <script>
 import CardProgrammation from "../components/CardProgrammation.vue";
+import IconPlus from "../components/icons/IconPlus.vue";
 
 // Bibliothèque Firestore : import des fonctions
 import {
@@ -41,7 +48,7 @@ import {
 
 export default {
   name: "ProgrammationView",
-  components: { CardProgrammation },
+  components: { CardProgrammation, IconPlus },
   data() {
     return {
       listeProgrammation: [],
