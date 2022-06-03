@@ -19,7 +19,7 @@
           Créer
         </button>
         <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl">
-          <Router-link to="/artsites">Cancel</Router-link>
+          <Router-link to="/artistes">Cancel</Router-link>
         </button>
       </div>
     </form>

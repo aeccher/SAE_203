@@ -5,7 +5,7 @@
       <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
       <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Genre de musique" v-model="artiste.genre" required />
       <p class="text-center font-roboto text-sm" role="alert">
-        Attention vous allez supprimer ce participant, cette action est irréversible !!
+        Attention vous allez supprimer cet artiste, cette action est irréversible !!
       </p>
       <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl" type="submit">
         Supprimer

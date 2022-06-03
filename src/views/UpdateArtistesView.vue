@@ -1,6 +1,6 @@
 <template>
   <main class="bg-Bleu pl-36 pt-14 pb-16">
-    <form enctype="multipart/form-data" @submit.prevent="updateArtiste">
+    <form enctype="multipart/form-data" @submit.prevent="updateArtistes">
       <h1 class="pl-9 font-roboto text-2xl font-bold text-white ipad_mini:text-3xl">Mise à jour de l'artiste</h1>
       <img :src="imageData" />
       <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
@@ -11,7 +11,7 @@
         Modifier
       </button>
       <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl">
-        <Router-link to="/programmation">Cancel</Router-link>
+        <Router-link to="/artistes">Cancel</Router-link>
       </button>
     </form>
   </main>
@@ -66,10 +66,10 @@ export default {
     // via la variable système $route de la vue
     console.log("id artiste", this.$route.params.id);
     // Recherche participant concerné
-    this.getArtiste(this.$route.params.id);
+    this.getArtistes(this.$route.params.id);
   },
   methods: {
-    async getArtiste(id) {
+    async getArtistes(id) {
       // Obtenir Firestore
       const firestore = getFirestore();
       // Base de données (collection) document artiste
@@ -127,7 +127,7 @@ export default {
       }
     },
 
-    async updateArtiste() {
+    async updateArtistes() {
       // Si l'image a été modifiée
       if (this.imgModifiee) {
         // On supprime l'ancienne
