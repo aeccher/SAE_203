@@ -2,13 +2,15 @@
   <main class="bg-Vert pl-36 pt-14 pb-16">
     <form enctype="multipart/form-data" @submit.prevent="deleteArtiste">
       <h1 class="pl-9 font-roboto text-2xl font-bold text-white ipad_mini:text-3xl">Suppression d'un artiste</h1>
-      <input placeholder="Nom de l'artiste" v-model="artiste.title" required />
-      <input placeholder="Genre de musique" v-model="artiste.genre" required />
+      <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
+      <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Genre de musique" v-model="artiste.genre" required />
       <p class="text-center font-roboto text-sm" role="alert">
         Attention vous allez supprimer ce participant, cette action est irréversible !!
       </p>
-      <button type="submit">Supprimer</button>
-      <button>
+      <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl" type="submit">
+        Supprimer
+      </button>
+      <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl">
         <Router-link to="/programmation">Cancel</Router-link>
       </button>
     </form>

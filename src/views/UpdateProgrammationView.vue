@@ -2,10 +2,12 @@
   <main class="bg-Vert pl-36 pt-14 pb-16">
     <form enctype="multipart/form-data" @submit.prevent="updateArtiste">
       <h1 class="pl-9 font-roboto text-2xl font-bold text-white ipad_mini:text-3xl">Mise à jour de l'artiste</h1>
-      <input placeholder="Nom de l'artiste" v-model="artiste.title" required />
-      <input placeholder="Genre de musique" v-model="artiste.genre" required />
-      <button type="submit">Modifier</button>
-      <button>
+      <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
+      <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Genre de musique" v-model="artiste.genre" required />
+      <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl" type="submit">
+        Modifier
+      </button>
+      <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl">
         <Router-link to="/programmation">Cancel</Router-link>
       </button>
     </form>

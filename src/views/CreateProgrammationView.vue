@@ -1,13 +1,19 @@
 <template>
-  <main class="bg-Vert pl-36 pt-14 pb-16">
+  <main class="bg-Vert pl-36 pt-36 pb-96">
     <form enctype="multipart/form-data" @submit.prevent="createArtiste">
       <h1 class="pl-9 font-roboto text-2xl font-bold text-white ipad_mini:text-3xl">Création d'un artiste</h1>
-      <input placeholder="Nom de l'artiste" v-model="artiste.title" required />
-      <input placeholder="Genre de musique" v-model="artiste.genre" required />
-      <button type="submit">Créer</button>
-      <button>
-        <Router-link to="/programmation">Cancel</Router-link>
-      </button>
+      <div class="flex justify-around">
+        <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
+        <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Genre de musique" v-model="artiste.genre" required />
+      </div>
+      <div class="flex justify-end gap-3 p-3">
+        <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl" type="submit">
+          Créer
+        </button>
+        <button class="w-auto rounded-lg bg-Noir text-center font-roboto text-base text-white ipad_mini:text-xl">
+          <Router-link to="/programmation">Cancel</Router-link>
+        </button>
+      </div>
     </form>
   </main>
 </template>
