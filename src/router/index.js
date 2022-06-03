@@ -13,6 +13,8 @@ import CreateProgrammation from '../views/CreateProgrammationView.vue'
 import UpdateProgrammation from '../views/UpdateProgrammationView.vue'
 import DeleteProgrammation from '../views/DeleteProgrammationView.vue'
 import CreateArtistes from '../views/CreateArtistesView.vue'
+import UpdateArtistes from '../views/UpdateArtistesView.vue'
+import DeleteArtistes from '../views/DeleteArtistesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +36,8 @@ const router = createRouter({
     { path: '/deleteProgrammation/:id', name: 'DeleteProgrammation', component: DeleteProgrammation },
 
     { path: '/createArtistes', name: 'CreateArtistes', component: CreateArtistes },
+    { path: '/updateArtistes/:id', name: 'UpdateArtistes', component: UpdateArtistes },
+    { path: '/deleteArtistes/:id', name: 'DeleteArtistes', component: DeleteArtistes },
   ]
 })
 
