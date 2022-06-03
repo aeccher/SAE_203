@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-Vert pl-36 pt-14 pb-16">
+  <main class="bg-Vert pl-36 pt-36 pb-96">
     <form enctype="multipart/form-data" @submit.prevent="updateArtiste">
       <h1 class="pl-9 font-roboto text-2xl font-bold text-white ipad_mini:text-3xl">Mise à jour de l'artiste</h1>
       <input class="rounded-lg font-roboto text-base ipad_mini:text-xl" placeholder="Nom de l'artiste" v-model="artiste.title" required />
