@@ -11,18 +11,25 @@
     <p class="pl-6 font-mate text-xs text-Vert">
       {{ genre }}
     </p>
-    <Router-link :to="{ name: 'UpdateProgrammation', params: { id } }">
-      <icon-update class="ml-52" />
-    </Router-link>
+    <div class="flex justify-end">
+      <Router-link :to="{ name: 'UpdateProgrammation', params: { id } }">
+        <icon-update />
+      </Router-link>
+
+      <Router-link :to="{ name: 'DeleteProgrammation', params: { id } }">
+        <icon-cross />
+      </Router-link>
+    </div>
   </div>
 </template>
 
 <script >
 import IconLine from "./icons/IconLine.vue";
 import IconUpdate from "./icons/IconUpdate.vue";
+import IconCross from "./icons/IconCross.vue";
 
 export default {
-  components: { IconLine, IconUpdate },
+  components: { IconLine, IconUpdate, IconCross },
   props: {
     title: { type: String },
     genre: { type: String },
