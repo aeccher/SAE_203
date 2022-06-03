@@ -10,6 +10,7 @@ import ArtisteView from '../views/ArtisteView.vue'
 import StyleGuideView from '../views/StyleGuideView.vue'
 import NotFound from '../views/NotFound.vue'
 import CreateProgrammation from '../views/CreateProgrammationView.vue'
+import UpdateProgrammation from '../views/UpdateProgrammationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,7 @@ const router = createRouter({
       path: '/404', alias: '/:catchAll(.*)', name: 'NotFound', component: NotFound
     },
     { path: '/createProgrammation', name: 'CreateProgrammation', component: CreateProgrammation },
+    { path: '/updateProgrammation/:id', name: 'UpdateProgrammation', component: UpdateProgrammation },
   ]
 })
 

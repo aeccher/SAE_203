@@ -14,6 +14,7 @@
           :title="artiste.title"
           :genre="artiste.genre"
           :img_card="artiste.photo"
+          :id="artiste.id"
         />
       </div>
     </Router-link>
